@@ -168,9 +168,33 @@ button:hover {
     font-size: 0.9rem;
   }
 }
+
+/* Desktop view restriction */
+#desktop-only {
+  display: none;
+}
+
+#mobile-content {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  #desktop-only {
+    display: block;
+  }
+  #mobile-content {
+    display: none;
+  }
+}
 </style>
 </head>
 <body>
+<div id="desktop-only">
+  <div style="text-align: center; padding: 50px; font-size: 24px; color: white; background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%); height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <!-- This page is designed for mobile devices only. Please view it on your phone for the best experience! 📱❤️ -->
+  </div>
+</div>
+<div id="mobile-content">
 <video autoplay muted loop id="background-video">
   <source src="182283-868067131.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -314,6 +338,6 @@ document.addEventListener('visibilitychange', () => {
 });
 
 </script>
+</div>
 </body>
 </html>
-
