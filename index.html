@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shraddha 💖</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 <style>
@@ -121,6 +122,51 @@ button:hover {
   height: 100%;
   background: rgba(0,0,0,0.4);
   z-index: -1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .screen {
+    max-width: 100%;
+    padding: 15px;
+  }
+  h1, h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    min-width: 120px;
+  }
+  .gathering-star {
+    font-size: 1.2rem;
+  }
+  #special-message {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
 }
 </style>
 </head>
@@ -270,3 +316,4 @@ document.addEventListener('visibilitychange', () => {
 </script>
 </body>
 </html>
+
