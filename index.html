@@ -9,7 +9,7 @@
 <style>
 body {
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
@@ -24,7 +24,7 @@ body {
 .screen {
   text-align: center;
   max-width: 100%;
-  padding: 15px;
+  padding: 10px;
   display: none;
   animation: fadeIn 1s ease-out;
 }
@@ -32,14 +32,14 @@ body {
   display: block;
 }
 h1, h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: 300;
   color: #FFFFFF;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff6b9d;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -47,7 +47,7 @@ p {
 }
 button {
   margin: 10px;
-  padding: 15px 30px;
+  padding: 12px 24px;
   border: none;
   background: rgba(255, 107, 157, 0.2);
   color: #FFFFFF;
@@ -78,7 +78,7 @@ button:hover {
 .gathering-star {
   position: absolute;
   color: #ffd700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   animation: gather 3s ease-in-out forwards, twinkle 1s infinite;
   opacity: 1;
 }
@@ -125,6 +125,48 @@ button:hover {
   height: 100%;
   background: rgba(0,0,0,0.4);
   z-index: -1;
+}
+
+/* Tablet and larger */
+@media (min-width: 601px) {
+  body {
+    padding: 20px;
+  }
+  .screen {
+    padding: 15px;
+  }
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+  .gathering-star {
+    font-size: 1.2rem;
+  }
+  #special-message {
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  h1, h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .screen {
+    max-width: 600px;
+  }
+  button {
+    font-size: 1.2rem;
+  }
 }
 </style>
 </head>
@@ -182,7 +224,7 @@ button:hover {
   <p class="reveal-text">Stay amazing, stay beautiful… and keep smiling ❤️ Love You ♾️</p>
   <p class="reveal-text">I'm so lucky to have you in my life…</p>
   <button class="reveal-text" onclick="document.getElementById('special-message').style.display='block'; this.style.display='none';">One more thing…</button>
-  <p id="special-message" style="display:none; font-size:1.5rem; margin-top:20px;">You are the best person in this World 💖</p>
+  <p id="special-message" style="display:none; font-size:1.2rem; margin-top:20px;">You are the best person in this World 💖</p>
 </div>
 
 <div id="surprise" class="screen">
